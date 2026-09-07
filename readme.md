@@ -108,5 +108,21 @@ High-Level Architecture
 
 
 
+## 📂 Source Datasets
 
+The Energy Grid pipeline processes multiple energy-related datasets.
 
++------------------------------+--------------------------------------------------+
+| Dataset                      | Purpose                                          |
++------------------------------+--------------------------------------------------+
+| energy_usage_stream          | Household energy consumption and electrical     |
+|                              | measurements                                     |
++------------------------------+--------------------------------------------------+
+| device_metrics_stream_v2_raw | Device performance and energy consumption       |
++------------------------------+--------------------------------------------------+
+| weather_source_v2_messy      | Weather and environmental measurements          |
++------------------------------+--------------------------------------------------+
+| tariff_metrics_stream_v2     | Electricity tariff and billing information      |
++------------------------------+--------------------------------------------------+
+| grid_load_stream_messy       | Grid load, capacity and substation measurements |
++------------------------------+--------------------------------------------------+
