@@ -42,7 +42,66 @@ Source Data -> Azure Data Lake Storage -> Azure Data Lake Storage -> Bronze Laye
 
 
 
+High-Level Architecture
+
 <img width="1578" height="997" alt="image" src="https://github.com/user-attachments/assets/73665a46-da2e-4539-9f22-b7a2bc5b8169" />
 
 
-  
+
+
+## 🛠️ Technology Stack
+
+<table>
+  <thead>
+    <tr>
+      <th>Technology</th>
+      <th>Purpose</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Azure Data Lake Storage Gen2</strong></td>
+      <td>Source/raw data storage</td>
+    </tr>
+    <tr>
+      <td><strong>Databricks</strong></td>
+      <td>Data processing and Delta tables</td>
+    </tr>
+    <tr>
+      <td><strong>Apache Spark / PySpark</strong></td>
+      <td>Distributed data processing</td>
+    </tr>
+    <tr>
+      <td><strong>Delta Lake</strong></td>
+      <td>Reliable storage for Bronze, Silver and Gold layers</td>
+    </tr>
+    <tr>
+      <td><strong>Unity Catalog</strong></td>
+      <td>Catalog management and data governance</td>
+    </tr>
+    <tr>
+      <td><strong>dbt Cloud</strong></td>
+      <td>SQL transformations and data modelling</td>
+    </tr>
+    <tr>
+      <td><strong>Apache Airflow</strong></td>
+      <td>Pipeline orchestration and workflow management</td>
+    </tr>
+    <tr>
+      <td><strong>Slack</strong></td>
+      <td>Pipeline and task failure notifications</td>
+    </tr>
+    <tr>
+      <td><strong>Git</strong></td>
+      <td>Version control</td>
+    </tr>
+    <tr>
+      <td><strong>GitHub</strong></td>
+      <td>Source-code repository and collaboration</td>
+    </tr>
+    <tr>
+      <td><strong>Databricks SQL</strong></td>
+      <td>Data exploration, SQL queries, reporting and dashboards</td>
+    </tr>
+  </tbody>
+</table>
