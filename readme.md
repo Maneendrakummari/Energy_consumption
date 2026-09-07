@@ -15,8 +15,7 @@ Apache Airflow, Slack monitoring, and GitHub for version control.
 The final Gold layer provides dimensional and fact tables that can be used
 for energy consumption, grid load, household, feeder, substation, operator,
 and zone analysis.
-```
-text
+```text
 
 Source Data
      ↓
