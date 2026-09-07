@@ -17,15 +17,27 @@ for energy consumption, grid load, household, feeder, substation, operator,
 and zone analysis.
 
 Source Data
+
      ↓
+     
 Azure Data Lake Storage
+
      ↓
+     
 Bronze Layer
+
      ↓
+     
 Silver Layer
+
      ↓
+     
 Gold Layer
+
      ↓
+     
 Analytics / Dashboards
+
      ↓
+     
 Monitoring & Alerts
