@@ -15,10 +15,24 @@ Apache Airflow, Slack monitoring, and GitHub for version control.
 The final Gold layer provides dimensional and fact tables that can be used
 for energy consumption, grid load, household, feeder, substation, operator,
 and zone analysis.
+```
+text
 
-Source Data -> Azure Data Lake Storage -> Azure Data Lake Storage -> Bronze Layer -> Silver Layer -> Gold Layer
- -> Analytics / Dashboards -> Monitoring & Alerts
+Source Data
+     ↓
+Azure Data Lake Storage
+     ↓
+Bronze Layer
+     ↓
+Silver Layer
+     ↓
+Gold Layer
+     ↓
+Analytics / Dashboards
+     ↓
+Monitoring & Alerts
 
+```
 
 
 
