@@ -16,28 +16,7 @@ The final Gold layer provides dimensional and fact tables that can be used
 for energy consumption, grid load, household, feeder, substation, operator,
 and zone analysis.
 
-Source Data
+Source Data -> Azure Data Lake Storage -> Azure Data Lake Storage -> Bronze Layer -> Silver Layer -> Gold Layer
+ -> Analytics / Dashboards -> Monitoring & Alerts
 
-     ↓
-     
-Azure Data Lake Storage
-
-     ↓
-     
-Bronze Layer
-
-     ↓
-     
-Silver Layer
-
-     ↓
-     
-Gold Layer
-
-     ↓
-     
-Analytics / Dashboards
-
-     ↓
-     
-Monitoring & Alerts
+  
