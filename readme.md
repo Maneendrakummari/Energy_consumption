@@ -177,6 +177,7 @@ The Bronze layer stores the raw source data with minimal transformation.
 - Support downstream Silver transformations.
 
 ```text
+
 Azure Data Lake Storage
           │
           ▼
@@ -228,8 +229,8 @@ for energy-grid analytics.
 
 The model follows a Star Schema.
 
-```
-text
+```text
+
 energydbs.gold
 │
 ├── dim_household
@@ -305,8 +306,8 @@ Typical measures include:
 
 Source-to-Target Mapping
 
-```
-text
+```text
+
 Bronze
 energy_metrics
       │
@@ -380,8 +381,7 @@ energydbs.silver
 energydbs.gold
 
 
-```
-text
+```text
 
 dbt/
 │
@@ -421,6 +421,7 @@ Airflow triggers the dbt Cloud deployment job, waits for its completion,
 and receives the final execution status.
 
 
+```text
 
 Airflow
    │
@@ -438,6 +439,7 @@ dbt build
    │
    ▼
 Databricks
+```
 
 
 
@@ -456,8 +458,7 @@ The Slack notification contains:
 - Failure status
 - Instructions to check Airflow/dbt Cloud logs
 
-```
-text
+```text
 
 Airflow Task
      │
@@ -540,8 +541,7 @@ The following must remain outside source control:
 - Database passwords
 
 
-```
-text
+```text
 
 Energy-Grid-Data-Engineering/
 │
