@@ -163,7 +163,8 @@ The Bronze layer stores the raw source data with minimal transformation.
 - Preserve data for reprocessing and auditing.
 - Support downstream Silver transformations.
 
-  Azure Data Lake Storage
+```text
+Azure Data Lake Storage
           │
           ▼
        Bronze
@@ -173,6 +174,7 @@ The Bronze layer stores the raw source data with minimal transformation.
           ├── grid_load
           ├── traffic_metrics
           └── weather
+```
 
   
 
@@ -195,6 +197,7 @@ validated datasets.
 - Generate data-quality indicators.
 
 
+```text
 energydbs.silver
 │
 ├── energy_metrics
@@ -202,6 +205,7 @@ energydbs.silver
 ├── silver_grid_load_metrics
 ├── silver_traffic_metrics
 └── silver_weather_metrics
+```
 
 
 # 🥇 Gold Layer – Dimensional Model
@@ -211,6 +215,8 @@ for energy-grid analytics.
 
 The model follows a Star Schema.
 
+```
+text
 energydbs.gold
 │
 ├── dim_household
@@ -219,6 +225,7 @@ energydbs.gold
 ├── dim_substation
 ├── dim_zone
 └── fact_grid_load
+```
 
 Gold Data Model
 
@@ -285,6 +292,8 @@ Typical measures include:
 
 Source-to-Target Mapping
 
+```
+text
 Bronze
 energy_metrics
       │
@@ -302,6 +311,7 @@ dim_household
 
 
 
+```
 
 
 ### Transformation Rules
@@ -357,7 +367,8 @@ energydbs.silver
 energydbs.gold
 
 
-
+```
+text
 
 dbt/
 │
@@ -384,6 +395,7 @@ dbt/
 │
 ├── sources.yml
 └── dbt_project.yml
+```
 
 
 
@@ -431,6 +443,8 @@ The Slack notification contains:
 - Failure status
 - Instructions to check Airflow/dbt Cloud logs
 
+```
+text
 
 Airflow Task
      │
@@ -450,6 +464,7 @@ Airflow Task
             ▼
        🚨 Alert
 
+```
 
 
 
@@ -512,7 +527,8 @@ The following must remain outside source control:
 - Database passwords
 
 
-
+```
+text
 
 Energy-Grid-Data-Engineering/
 │
@@ -569,7 +585,7 @@ Energy-Grid-Data-Engineering/
 ├── README.md
 └── .gitignore
 
-
+```
 
 
 
