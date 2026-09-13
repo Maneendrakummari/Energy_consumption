@@ -570,25 +570,9 @@ Energy-Grid-Data-Engineering/
 │   ├── Silver/
 │   └── Gold/
 │       ├── Dimension Tables/
-│       └── Fact Tables/
+│       └── Fact Tables/  
+│   
 │
-├── dbt/
-│   ├── models/
-│   │   ├── silver/
-│   │   └── gold/
-│   ├── macros/
-│   │   └── generate_schema_name.sql
-│   ├── tests/
-│   ├── sources.yml
-│   └── dbt_project.yml
-│
-├── Airflow/
-│   ├── dags/
-│   │   ├── energy_grid_dbt_pipeline.py
-│   │   └── failure_handler.py
-│   ├── Dockerfile
-│   ├── docker-compose.yml
-│   └── requirements.txt
 │
 ├── Tests/
 │   ├── Test_Bronze.sql
