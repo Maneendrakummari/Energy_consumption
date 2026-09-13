@@ -1,0 +1,13 @@
+version: 2
+
+sources:
+  - name: bronze
+    database: energydbs
+    schema: bronze
+
+    tables:
+      - name: energy_metrics
+      - name: sink_device_metrics
+      - name: sink_grid_load
+      - name: sink_traffic_metrics
+      - name: sink_weather
